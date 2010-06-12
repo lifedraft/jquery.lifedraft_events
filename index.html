@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>index</title>
+	
+</head>
+
+<body>
+  <form action="#" method="GET">
+    <fieldset>
+      <select name="yes">
+        <option value="0">Please select</option>
+        <option value="1">Germany</option>
+        <option value="2">USA</option>
+        <option value="3">United Kingdom</option>
+      </select>
+      <div class="message" style="display:none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </fieldset>
+    
+    <table border="1">
+      <thead>
+        <tr>
+          <th><input type="checkbox" /></th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>Test 1</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>Test 2</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>Test 3</td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </form>
+
+  <script src="jquery-1.4.js" type="text/javascript" charset="utf-8"></script>
+  <script src="jquery.lifedraft_events.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+  
+    jQuery("select")
+      .lifedraft_events()
+        .change().jQuery("table").animate({width: 200}).fadeOut().fadeIn().animate({width: 300})
+        
+        // .click().css("position", "relative").animate({top:20, left: 20});
+    
+    // jQuery("table thead :checkbox").lifedraft_events()
+    //       .click().query("table tbody :checkbox").toggle();
+    
+    
+  </script>
+  
+</body>
+</html>
