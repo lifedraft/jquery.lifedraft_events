@@ -49,14 +49,16 @@
   <script src="jquery.lifedraft_events.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" charset="utf-8">
   
-    jQuery("select")
+    /*jQuery("select")
       .lifedraft_events()
-        .change().jQuery("table").animate({width: 200}).fadeOut().fadeIn().animate({width: 300})
+        .change().jQuery("table").animate({width: 200}).fadeOut().fadeIn().animate({width: 300});*/
         
         // .click().css("position", "relative").animate({top:20, left: 20});
-    
-    // jQuery("table thead :checkbox").lifedraft_events()
-    //       .click().query("table tbody :checkbox").toggle();
+      
+      // jQuery("table thead :checkbox").toggle(function(){this.checked = true;}, function(){this.checked = false;});
+      
+      jQuery("table thead :checkbox").lifedraft_events()
+        .click().jQuery("table tbody :checkbox");
     
     
   </script>
